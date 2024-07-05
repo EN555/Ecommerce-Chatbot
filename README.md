@@ -2,6 +2,9 @@
 
 This project is a conversational agent chatbot built using Flask and integrated with OpenAI's GPT-4 model. The chatbot provides support for order status inquiries, requests for human representatives, and return policy information.
 
+
+<img src="https://github.com/EN555/Ecommerce-Chatbot/assets/61500507/808de3f7-7394-4401-b4c9-c046c2f1ca59" alt="Ecommerce-Chatbot" width="400"/>
+
 ## Project Structure
 
 Ecommerce-Chatbot/
