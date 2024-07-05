@@ -1,0 +1,10 @@
+.idea/
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+share/
+.DS_Store
+*.log
+*.tmp
+*.bak

@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      FLASK_ENV: development
+      OPENAI_API_KEY: "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"
