@@ -6,6 +6,10 @@ This Ecommerce-Chatbot provides essential services for an ecommerce platform, in
 <img src="https://github.com/EN555/Ecommerce-Chatbot/assets/61500507/808de3f7-7394-4401-b4c9-c046c2f1ca59" alt="Ecommerce-Chatbot" width="400"/>
 
 
+## Application Flow
+
+<img src="https://github.com/EN555/Ecommerce-Chatbot/assets/61500507/29d2a325-417d-459a-bafd-f86ee866e81d" alt="flow" width="500"/>
+
 
 ## Prerequisites
 
