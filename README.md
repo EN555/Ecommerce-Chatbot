@@ -10,7 +10,6 @@ This Ecommerce-Chatbot provides essential services for an ecommerce platform, in
 ## Prerequisites
 
 - Docker
-- Docker Compose
 
 ## Setup
 
@@ -56,5 +55,43 @@ Once the container is running, you can access the application in your web browse
 - **order_status.csv:** A CSV file containing order statuses.
 - **contact_info.csv:** A CSV file for storing contact information.
 
+
+##  Evaluating Model Performance
+
+
+### How to Run the Tests
+ ```bash
+python evaluate_chatbot.py
+   ```
+### Evaluation Methods
+#### Accuracy
+- **Simulation of Conversations**: Each predefined test case from the JSON file is run through the `react_agent_chat` function to obtain the chatbot's actual responses.
+- **BERTScore Evaluation**: Each actual response from the chatbot is compared to the expected response using BERTScore, which evaluates the similarity between the two texts at a semantic level, providing precision, recall, and F1 scores.
+- **Determining Correctness**: A response is considered correct if its BERTScore F1 score is above a specified threshold (default is 0.85).
+- **Accuracy Calculation**: The total number of correct responses is divided by the total number of responses to get the accuracy. The formula used is:
+  
+Accuracy = (Number of Correct Responses / Total Number of Responses) * 100%
+
+
+  
+- **Output**: The results are saved in an Excel file (`evaluation_results.xlsx`) and a text report (`evaluation_report.txt`).
+
+
+#### Response Relevance
+
+- I manually annotated and compared the model's expected output to the model's actual output to check if the answer is relevant to the question.
+- The annotations can be found in the `evaluation_results.xlsx` file.
+
+#### User Satisfaction
+
+- I manually annotated and compared the model's expected output to the model's actual output to check if it provided enough information.
+- The annotations can be found in the `evaluation_results.xlsx` file.
+
+## Evaluation Results
+
+The detailed evaluation results, including the accuracy, relevance, and user satisfaction scores, are documented in the following files:
+
+- **Accuracy**: Detailed evaluation can be found in `evaluation_report.txt`.
+- **Relevance and User Satisfaction Annotations**: These are documented in the `evaluation_results.xlsx` file.
 
 
