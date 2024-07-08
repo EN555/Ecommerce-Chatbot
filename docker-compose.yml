@@ -9,4 +9,4 @@ services:
       - .:/app
     environment:
       FLASK_ENV: development
-      OPENAI_API_KEY: "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"
+      OPENAI_API_KEY: ""
