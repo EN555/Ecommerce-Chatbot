@@ -1,0 +1,62 @@
+Accuracy: 96.00%
+
+Test Case 1:
+Inputs: ['What is the status of my order?', 'My order ID is 12345.']
+Expected Responses: ['Please provide your order ID.', 'Your order is being processed.']
+Actual Responses: ['Could you please provide your order ID? It should include only digits.\n```', 'Your order is currently being processed. If you need further details or assistance, please let me know!']
+Results: [True, True]
+
+Test Case 2:
+Inputs: ['I want to speak to a human.', 'My name is John Doe. My email is john@example.com. My phone number is 123-456-7890.']
+Expected Responses: ['Please provide your contact information (full name, email, and phone number).', 'Thank you. A human representative will contact you soon.']
+Actual Responses: ['Could you please provide your name, email, and phone number so I can connect you with a human representative?\n```', 'Thank you, John Doe. Your information has been saved, and I will connect you with a human representative shortly.']
+Results: [True, True]
+
+Test Case 3:
+Inputs: ['What is the return policy for items purchased at your store?']
+Expected Responses: ['You can return most items within 30 days of purchase for a full refund or exchange. Items must be in their original condition, with all tags and packaging intact. Please bring your receipt or proof of purchase when returning items.']
+Actual Responses: ['You can return most items within 30 days of purchase for a full refund or exchange. Items must be in their original condition, with all tags and packaging intact. Please bring your receipt or proof of purchase when returning items.']
+Results: [True]
+
+Test Case 4:
+Inputs: ['What is the status of my order?', 'My order ID is 54321.', 'Can you check again?', 'I think there might be a mistake.']
+Expected Responses: ['Please provide your order ID.', 'Your order has been shipped.', 'I have double-checked the status. Your order has been shipped.', 'I apologize for any confusion. Your order has been shipped.']
+Actual Responses: ['Could you please provide your order ID? It should include only digits.\n```', 'Your order has been shipped. If you need any further assistance, please let me know!\n```', 'Could you please provide your order ID again? It should include only digits.', "I'm here to help clarify any issues. Could you please provide your order ID again? It should include only digits. This will allow me to check the status for you accurately."]
+Results: [True, True, True, True]
+
+Test Case 5:
+Inputs: ['I want to speak to a human.', 'My name is Jane Smith. My email is jane@example.com. My phone number is 987-654-3210.', 'When can I expect a call?']
+Expected Responses: ['Please provide your contact information (full name, email, and phone number).', 'Thank you. A human representative will contact you soon.', 'A representative will contact you within 24 hours.']
+Actual Responses: ['Could you please provide your name, email, and phone number so I can connect you with a human representative?', 'Thank you, Jane Smith. Your information has been saved, and I will connect you with a human representative shortly.', 'Thank you for your patience, Jane Smith. A human representative will reach out to you shortly. If you have any other questions or need further assistance, please let me know!\n```']
+Results: [True, True, True]
+
+Test Case 6:
+Inputs: ['What is the return policy for items purchased at your store?', 'Are there any items that cannot be returned under this policy?']
+Expected Responses: ['You can return most items within 30 days of purchase for a full refund or exchange. Items must be in their original condition, with all tags and packaging intact. Please bring your receipt or proof of purchase when returning items.', 'Yes, certain items such as clearance merchandise, perishable goods, and personal care items are non-returnable. Please check the product description or ask a store associate for more details.']
+Actual Responses: ['You can return most items within 30 days of purchase for a full refund or exchange. Items must be in their original condition, with all tags and packaging intact. Please bring your receipt or proof of purchase when returning items.\n```', 'Yes, certain items such as clearance merchandise, perishable goods, and personal care items are non-returnable. Please check the product description or ask a store associate for more details.\n```']
+Results: [True, True]
+
+Test Case 7:
+Inputs: ['What is the status of my order?', 'My order ID is 11111.', 'Can I get a refund for this order?']
+Expected Responses: ['Please provide your order ID.', 'Your order has been delivered.', 'Refunds will be issued to the original form of payment. If you paid by credit card, the refund will be credited to your card. If you paid by cash or check, you will receive a cash refund.']
+Actual Responses: ['Could you please provide your order ID? It should include only digits.', 'Your order with ID 11111 has been delivered. If you need any further assistance, please let me know!', 'Refunds can be issued for most items within 30 days of purchase, provided they are in their original condition with all tags and packaging intact. Please bring your receipt or proof of purchase when returning items. However, certain items such as clearance merchandise, perishable goods, and personal care items are non-returnable. Please check the product description or ask a store associate for more details.\n```']
+Results: [True, True, False]
+
+Test Case 8:
+Inputs: ['I want to speak to a human.', 'My name is Bob Johnson. My email is bob@example.com. My phone number is 456-789-0123.', 'I have a question about my order.']
+Expected Responses: ['Please provide your contact information (full name, email, and phone number).', 'Thank you. A human representative will contact you soon.', 'A representative will be able to assist you with your order question.']
+Actual Responses: ['Could you please provide your name, email, and phone number so I can connect you with a human representative?\n```', 'Thank you, Bob Johnson. Your information has been saved, and I will connect you with a human representative shortly. If you have any other questions or need further assistance, please let me know!', 'Could you please provide your order ID? It should include only digits.']
+Results: [True, True, True]
+
+Test Case 9:
+Inputs: ['What is the return policy for items purchased at your store?', 'How will I receive my refund?']
+Expected Responses: ['You can return most items within 30 days of purchase for a full refund or exchange. Items must be in their original condition, with all tags and packaging intact. Please bring your receipt or proof of purchase when returning items.', 'Refunds will be issued to the original form of payment. If you paid by credit card, the refund will be credited to your card. If you paid by cash or check, you will receive a cash refund.']
+Actual Responses: ['You can return most items within 30 days of purchase for a full refund or exchange. Items must be in their original condition, with all tags and packaging intact. Please bring your receipt or proof of purchase when returning items.\n```', 'Refunds will be issued to the original form of payment. If you paid by credit card, the refund will be credited to your card. If you paid by cash or check, you will receive a cash refund.\n```']
+Results: [True, True]
+
+Test Case 10:
+Inputs: ['What is the status of my order?', 'My order ID is 22222.', 'I want to cancel this order.']
+Expected Responses: ['Please provide your order ID.', 'Your order is being processed.', 'I apologize, but once an order has been processed, it cannot be cancelled. You can return the item once you receive it.']
+Actual Responses: ['Could you please provide your order ID? It should include only digits.', 'Your order with ID 22222 is currently being processed. If you need any further assistance, please let me know!\n```', 'To cancel your order, please provide your order ID so I can assist you further.\n```']
+Results: [True, True, True]
+
